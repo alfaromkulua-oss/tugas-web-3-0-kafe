@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#080b12" />
+  <meta name="description" content="Kopi Sore Web3 — specialty coffee, wallet rewards, dan komunitas pemilik NFT." />
+  <title>Kopi Sore Web 3.0 — Coffee Meets Community</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="preconnect" href="https://images.pexels.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Kopi Sore Web3, beranda"><span class="brand-mark">ks.</span><span>KOPI SORE · WEB 3.0<small>COFFEE ONCHAIN COMMUNITY</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav"><a href="#menu">Menu</a><a href="#web3">Web 3.0 Rewards</a><a href="#story">Cerita Kami</a><a href="#visit">Lokasi</a><a class="nav-order" href="#menu">Pesan Sekarang <span>↗</span></a><button class="wallet-button" id="walletButton"><span class="wallet-dot"></span><span id="walletLabel">Connect Wallet</span></button></nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-photo" role="img" aria-label="Interior kafe yang hangat dengan meja dan bar kopi"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-copy"><span class="eyebrow light"><i class="status-dot"></i> SPECIALTY COFFEE · POWERED BY WEB3</span><h1>Good coffee.<br /><em>Better community.</em></h1><p>Secangkir kopi pilihan, reward di wallet, dan komunitas yang ikut menentukan masa depan kafe.</p><a class="button button-cream" href="#menu">Jelajahi Menu <span>↓</span></a><a class="hero-connect" href="#web3">Explore Web3 <span>↗</span></a></div>
+      <div class="hero-note"><span class="note-line"></span><span>LOCAL ROAST · ONCHAIN REWARDS</span></div>
+      <div class="hero-index">01 <span>—</span> 03</div>
+    </section>
+
+    <section class="web3-section section-wrap" id="web3">
+      <div class="web3-heading"><div><p class="eyebrow"><i class="status-dot"></i> KOPI SORE MEETS WEB3</p><h2>Lebih dari sekadar<br /><em>secangkir kopi.</em></h2></div><p class="web3-intro">Pengalaman kafe yang terhubung dengan wallet dan komunitas. Reward dan voting pada halaman ini adalah demo antarmuka.</p></div>
+      <div class="web3-grid">
+        <article class="web3-card reward-card"><div class="card-topline"><span>01 / REWARDS</span><span class="chain-chip">ETHEREUM</span></div><div class="token-orb"><img src="images/coffee-beans.jpg" alt="Foto asli biji kopi sangrai untuk ilustrasi reward $SORE" loading="lazy" /></div><h3>Setiap tegukan<br />punya nilai.</h3><p>Kumpulkan poin $SORE setiap kali menikmati menu favorit. Hubungkan wallet untuk melihat identitas Web3 kamu.</p><div class="token-balance"><span>YOUR $SORE BALANCE</span><strong id="tokenBalance">— <small>$SORE</small></strong></div></article>
+        <article class="web3-card nft-card"><div class="card-topline"><span>02 / MEMBERSHIP NFT</span><span class="nft-live">SOON</span></div><div class="nft-art"><img class="nft-photo" src="images/latte-art.jpg" alt="Foto asli cappuccino dengan latte art untuk konsep kartu membership" loading="lazy" /><div class="nft-ring"></div><span class="nft-serial">KS / 001</span><span class="nft-label">GENESIS<br />BREW CLUB</span></div><h3>Membership yang<br />terasa spesial.</h3><p>NFT membership sebagai konsep akses benefit, event tasting, dan menu rahasia komunitas.</p></article>
+        <article class="web3-card dao-card"><div class="card-topline"><span>03 / COMMUNITY DAO</span><span class="chain-chip">POLL DEMO</span></div><span class="dao-kicker">COMMUNITY PROPOSAL #04</span><h3>Menu spesial<br />berikutnya?</h3><p>Pilih racikan yang ingin kamu lihat di menu bulan depan.</p><div class="vote-options"><button class="vote-option" data-vote="Matcha Cloud"><span>Matcha Cloud</span><span class="vote-count">42%</span></button><button class="vote-option" data-vote="Orange Espresso"><span>Orange Espresso</span><span class="vote-count">58%</span></button></div><small class="vote-message" id="voteMessage">Voting demo · suara belum dicatat di blockchain</small></article>
+      </div>
+      <div class="tx-ledger" id="transactions"><div class="tx-ledger-head"><div><p class="eyebrow">TRANSACTIONS</p><h3>Riwayat pembayaran</h3></div><div class="tx-tools"><span class="chain-chip">DEMO LEDGER</span><button class="clear-transactions" id="clearTransactions" type="button" disabled>Hapus riwayat</button></div></div><p class="tx-empty" id="txEmpty">Belum ada transaksi. Pesanan simulasi akan muncul di sini.</p><div class="tx-list" id="txList"></div></div>
+      <p class="web3-disclaimer">Demo Web3 untuk tugas · Wallet hanya membaca alamat akun, tidak meminta tanda tangan atau mengirim transaksi.</p>
+    </section>
+
+    <section class="intro section-wrap">
+      <p class="eyebrow">SELAMAT DATANG DI KOPI SORE</p><h2>Ruang kecil untuk<br /><em>menikmati hal sederhana.</em></h2>
+      <p class="intro-desc">Dari biji kopi pilihan sampai roti yang baru keluar dari oven—kami percaya momen terbaik sering dimulai dari hal sederhana.</p>
+      <a class="text-link" href="#story">Kenali cerita kami <span>↗</span></a>
+    </section>
+
+    <section class="menu-section section-wrap" id="menu">
+      <div class="section-heading"><div><p class="eyebrow">DIBUAT DENGAN SEPENUH HATI</p><h2>Favorit <em>hari ini.</em></h2></div><a class="text-link" href="#visit">Lihat semua menu <span>↗</span></a></div>
+      <div class="menu-grid">
+        <article class="menu-card"><div class="menu-image"><img src="https://images.unsplash.com/photo-1634627183782-78f8b6d294ae?auto=format&fit=crop&w=1000&q=85" alt="Kopi espresso dan pastry di atas meja" loading="lazy" /><span class="menu-tag">BEST SELLER</span></div><div class="menu-info"><div><h3>Caramel Sea Salt</h3><p>Espresso, susu, karamel, sea salt cream</p></div><strong>32k</strong></div><button class="add-order" data-item="Caramel Sea Salt" data-price="32000">Tambah ke pesanan <span>+</span></button></article>
+        <article class="menu-card"><div class="menu-image"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=1000&q=85" alt="Kopi latte dengan foam lembut" loading="lazy" /><span class="menu-tag">KOPI SUSU</span></div><div class="menu-info"><div><h3>Es Kopi Sore</h3><p>House blend, susu segar, gula aren</p></div><strong>28k</strong></div><button class="add-order" data-item="Es Kopi Sore" data-price="28000">Tambah ke pesanan <span>+</span></button></article>
+        <article class="menu-card"><div class="menu-image"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=85" alt="Roti dan pastry artisan yang baru dipanggang" loading="lazy" /><span class="menu-tag">FRESH BAKED</span></div><div class="menu-info"><div><h3>Butter Croissant</h3><p>Pastry renyah, dipanggang setiap pagi</p></div><strong>26k</strong></div><button class="add-order" data-item="Butter Croissant" data-price="26000">Tambah ke pesanan <span>+</span></button></article>
+      </div>
+      <div class="order-bar" id="orderBar" aria-live="polite"><span class="order-icon">▤</span><span id="orderSummary">Pesanan kamu masih kosong</span><button id="checkout" disabled>Lihat Pesanan <span>↗</span></button></div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-photo"><img src="https://images.pexels.com/photos/31777068/pexels-photo-31777068.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Barista melayani pesanan di kasir kafe" loading="lazy" /><span class="photo-caption">DIRACIK LANGSUNG DI BAR KAMI</span></div>
+      <div class="story-copy"><p class="eyebrow">DARI BAR KECIL KAMI</p><h2>Setiap cangkir punya<br /><em>ceritanya sendiri.</em></h2><p>Barista kami memilih biji dari kebun lokal dan meraciknya satu per satu. Datang untuk kopi, pulang membawa cerita baru.</p><div class="story-details"><span>01 <b>Biji lokal pilihan</b></span><span>02 <b>Diracik saat dipesan</b></span><span>03 <b>Selalu ada ruang untukmu</b></span></div><a class="text-link" href="#visit">Mampir ke Kopi Sore <span>↗</span></a></div>
+    </section>
+
+    <section class="visit-section section-wrap" id="visit"><div class="visit-copy"><p class="eyebrow">KAMI MENUNGGU DI SINI</p><h2>Pelan-pelan saja.<br /><em>Kopinya tidak ke mana-mana.</em></h2><p>Lokasi demo · Kota Ambon, Maluku<br />Setiap hari, 08.00 – 22.00</p><a class="button button-dark" href="https://maps.google.com/?q=coffee+shop+Ambon+Maluku" target="_blank" rel="noreferrer">Cari Rute <span>↗</span></a></div><div class="visit-photo"><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1400&q=85" alt="Suasana interior coffee shop dengan bar dan tempat duduk" loading="lazy" /><div class="open-label"><span class="open-dot"></span> OPEN DAILY <b>08—22</b></div></div></section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">ks.</span><span>KOPI SORE · WEB3<small>COFFEE ONCHAIN COMMUNITY</small></span></a><p>Secangkir jeda. Satu komunitas.</p><button class="share-site" id="shareSite" type="button">Bagikan link ↗</button><span class="copyright">© 2026 Kopi Sore · Foto: <a href="https://unsplash.com" target="_blank" rel="noreferrer">Unsplash</a> & <a href="https://www.pexels.com/photo/barista-using-touchscreen-at-coffee-shop-counter-31777068/" target="_blank" rel="noreferrer">Pexels</a></span></footer>
+  <dialog id="orderDialog"><div class="dialog-inner"><button class="dialog-close" id="closeDialog" aria-label="Tutup">×</button><p class="eyebrow">PESANAN KAMU</p><h2>Siap dinikmati.</h2><div id="orderList"></div><div class="dialog-total"><span>Total</span><strong id="orderTotal">Rp0</strong></div><fieldset class="payment-options"><legend>Pilih metode pembayaran <small>SIMULASI</small></legend><label><input type="radio" name="paymentMethod" value="QR Demo" checked /><span><b>QR Pembayaran Demo</b><small>Scan untuk melihat data demo</small></span><strong>▦</strong></label><label><input type="radio" name="paymentMethod" value="Wallet / ETH" /><span><b>Wallet Web3</b><small>ETH · jaringan demo</small></span><strong>Ξ</strong></label></fieldset><div class="qr-scan-card"><img src="images/demo-payment.svg" alt="Kode QR demo Kopi Sore yang bisa dipindai, bukan QRIS aktif" /><div><b>QR Demo Kopi Sore</b><small>Scan untuk membaca pesan demo.<br />Tidak menerima pembayaran.</small></div></div><button class="button button-dark simulate-payment" id="simulatePayment">Simulasikan Pembayaran <span>↗</span></button><p class="dialog-hint" id="paymentHint">Tidak ada dana yang dipindahkan.</p><p class="payment-success" id="paymentSuccess" hidden></p><a class="whatsapp-link" id="whatsappOrder" href="#">Kirim detail pesanan via WhatsApp ↗</a></div></dialog>
+</body>
+</html>
